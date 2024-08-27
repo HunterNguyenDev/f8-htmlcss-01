@@ -201,11 +201,11 @@ a {
 
 .guides .sub-title {
   position: relative;
-  color: #000339;
   text-align: center;
   font-size: 3.5rem;
   font-weight: 600;
   line-height: 1;
+  color: #000339;
 }
 
 .guides .sub-title::before {
@@ -226,10 +226,10 @@ a {
   width: 459px;
   max-width: 100%;
   margin: 20px auto 0;
-  color: #5a6473;
   text-align: center;
   font-size: 1.6rem;
   line-height: 1.88;
+  color: #5a6473;
 }
 
 .list-guide {
@@ -245,18 +245,18 @@ a {
 
 .guide-item .title {
   margin-top: 26px;
-  color: #3b3c45;
   font-size: 2rem;
   font-weight: 500;
   line-height: 1.1;
+  color: #3b3c45;
 }
 
 .guide-item .link {
   display: inline-block;
   margin-top: 10px;
-  color: #0689ff;
   font-size: 1.4rem;
   font-weight: 600;
+  color: #0689ff;
 }
 
 .guide-item .arrow {
@@ -281,10 +281,10 @@ a {
 }
 
 .featured .sub-title {
-  color: #000339;
   font-size: 3.5rem;
   font-weight: 600;
   line-height: 1;
+  color: #000339;
 }
 
 .featured .row {
@@ -294,19 +294,19 @@ a {
 }
 
 .featured .desc {
-  color: #5a6473;
   font-size: 1.6rem;
   line-height: 1.88;
   font-weight: 400;
+  color: #5a6473;
 }
 
 /* ------- Cách 2: Căn giữa dấu mũi tên theo display: flex------- */
 .featured .link {
   display: flex;
   align-items: center;
-  color: #0689ff;
   font-size: 1.8rem;
   font-weight: 600;
+  color: #0689ff;
 }
 
 .featured .link .arrow {
@@ -320,15 +320,16 @@ a {
 } */
 
 .featured .list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-top: 70px;
 }
 
 .featured .item {
   flex: 1;
-  background-color: #fff;
   border: 12px;
+  background-color: #fff;
 }
 
 .featured .item .thumb {
@@ -344,19 +345,19 @@ a {
 }
 
 .featured .item .title a {
-  color: #000339;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.5;
+  color: #000339;
 }
 
 .featured .item .desc {
   margin-top: 11px;
-  color: #a3a6ab;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.5;
   --line-clamp: 3;
+  color: #a3a6ab;
   /* -webkit-line-clamp: var(--line-clamp, 3); */
 
   /* Tạo dấu cách giữa các từ */
@@ -370,11 +371,11 @@ a {
 }
 
 .featured .item .label {
-  color: #4d4d52;
   font-size: 1.4rem;
   font-weight: 500;
   letter-spacing: 0.01em;
   margin-left: 8px;
+  color: #4d4d52;
 }
 
 .featured .item .icon {
@@ -612,7 +613,7 @@ a {
 }
 
 .footer .row-top {
-  gap: 185px;
+  column-gap: 185px;
 }
 
 .footer .heading {
